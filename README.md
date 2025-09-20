@@ -2,9 +2,9 @@
 
 The instructions for Lab 2 are in this GitHub repo. Please make sure you duplicate the repo using the `Use this template` button, and be sure to share the repo with `ldihel@purdue.edu`, just like you did in Lab 1. When are have done this, you can optionally edit this README file to verify that you are able to make changes to this repository.
 
-Name: `your name here`
+Name: `Reid Sroda`
 
-Email: `your email here`
+Email: `rsroda@purdue.edu`
 
 Then, proceed to [Step 1](/Step1).
 

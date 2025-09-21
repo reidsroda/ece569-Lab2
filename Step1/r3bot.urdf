@@ -58,7 +58,7 @@
   </link>
 
   <!-- Joint 2 -->
-  <joint name="joint2" type="continuous">
+  <joint name="joint2" type="revolute">
     <parent link="link1" />
     <child link="link2" />
     <!-- offset by 5cm in y axis -->

@@ -48,7 +48,7 @@
     </visual>
   </link>
 
-  <!-- joint from "top" to "Leg2"-->
+  <!-- joint from "top" to "Leg2"
   <joint name="${prefix}leg2_joint" type="fixed">
     <origin rpy="0 0 0" xyz="${-leg_length} ${(table_height - (2 * table_thickness) / 2)} 0" />
     <parent link="{prefix}base_link" />
@@ -100,7 +100,7 @@
       </geometry>
       <material name="light_grey" />
     </visual>
-  </link>
+  </link> -->
 
   </xacro:macro>
 

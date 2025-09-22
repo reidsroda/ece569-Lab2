@@ -26,13 +26,13 @@
       <geometry>
         <box size="2 1 0.05" />
       </geometry>
-      <material name="brown" />
+      <material name="light_grey" />
     </visual>
   </link>
 
   <!-- joint from "top" to "leg1"-->
   <joint name="leg1_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="1 .5 0" />
+    <origin rpy="0 0 0" xyz=".95 .45 0" />
     <parent link="top" />
     <child link="leg1" />
   </joint>
@@ -40,7 +40,7 @@
   <!-- Leg1 Link -->
   <link name="leg1">
     <visual>
-      <origin rpy="0 0 0" xyz="-.05 -.05 -.525" />
+      <origin rpy="0 0 0" xyz="0 0 -.525" />
       <geometry>
         <cylinder radius=".05" length=".95" />
       </geometry>
@@ -50,7 +50,7 @@
 
   <!-- joint from "top" to "leg2"-->
   <joint name="leg2_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="1 -.5 0" />
+    <origin rpy="0 0 0" xyz="-.95 -.45 0" />
     <parent link="top" />
     <child link="leg2" />
   </joint>
@@ -58,7 +58,7 @@
   <!-- Leg2 Link -->
   <link name="leg2">
     <visual>
-      <origin rpy="0 0 0" xyz="-.05 .05 -.525" />
+      <origin rpy="0 0 0" xyz="0 0 -.525" />
       <geometry>
         <cylinder radius=".05" length=".95" />
       </geometry>
@@ -68,7 +68,7 @@
 
   <!-- joint from "top" to "leg3"-->
   <joint name="leg3_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="-1 -.5 0" />
+    <origin rpy="0 0 0" xyz="-.95 -.45 0" />
     <parent link="top" />
     <child link="leg3" />
   </joint>
@@ -76,7 +76,7 @@
   <!-- Leg3 Link -->
   <link name="leg3">
     <visual>
-      <origin rpy="0 0 0" xyz=".05 .05 -.525" />
+      <origin rpy="0 0 0" xyz="0 0 -.525" />
       <geometry>
         <cylinder radius=".05" length=".95" />
       </geometry>
@@ -86,7 +86,7 @@
 
     <!-- joint from "top" to "leg4"-->
   <joint name="leg4_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="-1.05 .45 0" />
+    <origin rpy="0 0 0" xyz="-.95 .45 0" />
     <parent link="top" />
     <child link="leg4" />
   </joint>

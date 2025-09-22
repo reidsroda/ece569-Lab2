@@ -29,24 +29,5 @@
       <material name="brown" />
     </visual>
   </link>
-
-  <!-- joint from "table" to leg1"-->
-  <joint name="table_leg1_joint" type="fixed">
-    <origin rpy="0 0 0" xyz=".5 -1 0" />
-    <parent link="top" />
-    <child link="leg1" />
-  </joint>
-
-  <!-- Top Link -->
-  <link name="top">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 2.0" />
-      <geometry>
-        <box size="2 1 0.05" />
-      </geometry>
-      <material name="brown" />
-    </visual>
-  </link>
-
   
 </robot>

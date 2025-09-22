@@ -14,7 +14,7 @@
 
   <!-- joint from "world" to leg1"-->
   <joint name="base_leg1_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0 -1 0" />
+    <origin rpy="0 0 0" xyz="0 0 0" />
     <parent link="world" />
     <child link="leg1" />
   </joint>
@@ -22,7 +22,7 @@
   <!-- Leg1 Link -->
   <link name="leg1">
     <visual>
-      <origin rpy="0 0 0" xyz=".5 -.5 0.475" />
+      <origin rpy="0 0 0" xyz=".5 -1 0.475" />
       <geometry>
         <cylinder radius="0.05" length="0.95" />
       </geometry>

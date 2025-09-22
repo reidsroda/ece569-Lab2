@@ -68,7 +68,7 @@
 
   <!-- joint from "top" to "leg3"-->
   <joint name="leg3_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="-.95 .45 0" />
+    <origin rpy="0 0 0" xyz=".95 -.45 0" />
     <parent link="top" />
     <child link="leg3" />
   </joint>

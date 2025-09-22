@@ -4,8 +4,8 @@
   <xacro:macro name="table" params="prefix parent *origin">
 
     <!-- Constants for robot dimensions -->
-    <xacro:property name="table_length" value="2" /> <!-- base (x) of top -->
-    <xacro:property name="table_width" value="1" /> <!-- width (y) of top  -->
+    <xacro:property name="table_length" value="5" /> <!-- base (x) of top -->
+    <xacro:property name="table_width" value="2" /> <!-- width (y) of top  -->
     <xacro:property name="table_height" value="1" /> <!-- height (z) of top -->
     <xacro:property name="table_thickness" value=".05" /> <!-- height (z) of top -->
     <xacro:property name="leg_length" value="${table_height - table_thickness}" /> <!-- height leg -->

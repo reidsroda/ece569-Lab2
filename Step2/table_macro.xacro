@@ -52,7 +52,7 @@
   <joint name="${prefix}leg2_joint" type="fixed">
     <origin rpy="0 0 0" xyz="${-leg_length} ${(table_height - (2 * table_thickness) / 2)} 0" />
     <parent link="${prefix}base_link" />
-    <child link="${prefix}leg2" />
+    <child link="${prefix}leg_link_2" />
   </joint>
 
   <!-- Leg2 Link -->

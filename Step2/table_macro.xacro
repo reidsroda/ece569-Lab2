@@ -33,7 +33,7 @@
   <!-- joint from "top" to "Leg1"-->
   <joint name="${prefix}leg1_joint" type="fixed">
     <origin rpy="0 0 0" xyz="${(table_length /2) - leg_radius} ${(table_width / 2) - leg_radius} 0" />
-    <parent link="table_top" />
+    <parent link="{prefix}top" />
     <child link="${prefix}leg1" />
   </joint>
 

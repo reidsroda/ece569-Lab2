@@ -32,7 +32,7 @@
 
   <!-- joint from "world" to "top"-->
   <joint name="leg1_joint" type="fixed">
-    <origin rpy="0 0 0" xyz=".5 1 0" />
+    <origin rpy="0 0 0" xyz="1 .5 0" />
     <parent link="top" />
     <child link="leg1" />
   </joint>
@@ -40,7 +40,7 @@
   <!-- Leg1 Link -->
   <link name="leg1">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 -.95" />
+      <origin rpy="0 0 0" xyz="0 0 -.475" />
       <geometry>
         <cylinder radius=".05" length=".95" />
       </geometry>

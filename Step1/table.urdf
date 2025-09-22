@@ -13,22 +13,39 @@
   <link name="world" />
 
   <!-- joint from "world" to "top"-->
-<joint name="top_joint" type="fixed">
-  <origin rpy="0 0 0" xyz="0 0 1" />
-  <parent link="world" />
-  <child link="top" />
-</joint>
+  <joint name="top_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 1" />
+    <parent link="world" />
+    <child link="top" />
+  </joint>
 
-<!-- Top Link -->
-<link name="top">
-  <visual>
-    <origin rpy="0 0 0" xyz="0 0 -0.025" />
-    <geometry>
-      <box size="2 1 0.05" />
-    </geometry>
-    <material name="brown" />
-  </visual>
+  <!-- Top Link -->
+  <link name="top">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.025" />
+      <geometry>
+        <box size="2 1 0.05" />
+      </geometry>
+      <material name="brown" />
+    </visual>
+  </link>
 
-</link>
+  <!-- joint from "world" to "top"-->
+  <joint name="leg1_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="top" />
+    <child link="leg1" />
+  </joint>
+
+  <!-- Leg1 Link -->
+  <link name="leg1">
+    <visual>
+      <origin rpy="0 0 0" xyz=".5 1 0" />
+      <geometry>
+        <cylinder radius=".05" length=".95" />
+      </geometry>
+      <material name="brown" />
+    </visual>
+  </link>
   
 </robot>

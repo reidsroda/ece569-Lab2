@@ -48,15 +48,15 @@
     </visual>
   </link>
 
-  <!-- joint from "top" to "Leg2"
-  <joint name="${prefix}leg2_joint" type="fixed">
+  <!--joint from "top" to "Leg2"-->
+  <!-- <joint name="${prefix}leg2_joint" type="fixed"> -->
     <origin rpy="0 0 0" xyz="${-leg_length} ${(table_height - (2 * table_thickness) / 2)} 0" />
     <parent link="{prefix}base_link" />
     <child link="{prefix}leg2" />
-  </joint>
+  <!-- </joint> -->
 
   <!-- Leg2 Link -->
-  <link name="${prefix}leg_link_2">
+  <!-- <link name="${prefix}leg_link_2"> -->
     <visual>
       <origin rpy="0 0 0" xyz="0 0 ${-(table_height + table_thickness) / 2}" />
       <geometry>
@@ -64,17 +64,17 @@
       </geometry>
       <material name="light_grey" />
     </visual>
-  </link>
+  <!-- </link> -->
 
   <!-- joint from "top" to "leg3"-->
-  <joint name="${prefix}leg3_joint" type="fixed">
+  <!-- <joint name="${prefix}leg3_joint" type="fixed"> -->
     <origin rpy="0 0 0" xyz="${leg_length} -${(table_height - (2 * table_thickness) / 2)} 0" />
     <parent link="{prefix}base_link" />
     <child link="{prefix}leg_link_3" />
-  </joint>
+  <!-- </joint> -->
 
   <!-- Leg3 Link -->
-  <link name="${prefix}leg_link_3">
+  <!-- <link name="${prefix}leg_link_3"> -->
     <visual>
       <origin rpy="0 0 0" xyz="0 0 -${(table_height + table_thickness) / 2}" />
       <geometry>
@@ -82,17 +82,17 @@
       </geometry>
       <material name="light_grey" />
     </visual>
-  </link>
+  <!-- </link> -->
 
   <!-- joint from "top" to "leg4"-->
-  <joint name="${prefix}leg4_joint" type="fixed">
+  <!-- <joint name="${prefix}leg4_joint" type="fixed"> -->
     <origin rpy="0 0 0" xyz="-${leg_length} -${(table_height - (2 * table_thickness) / 2)} 0" />
     <parent link="{prefix}base_link" />
     <child link="{prefix}leg_link_4" />
-  </joint>
+  <!-- </joint> -->
 
   <!-- Leg4 Link -->
-  <link name="${prefix}leg_link_4">
+  <!-- <link name="${prefix}leg_link_4"> -->
     <visual>
       <origin rpy="0 0 0" xyz="0 0 -${(table_height + table_thickness) / 2}" />
       <geometry>
@@ -100,7 +100,7 @@
       </geometry>
       <material name="light_grey" />
     </visual>
-  </link> -->
+  <!-- </link> -->
 
   </xacro:macro>
 

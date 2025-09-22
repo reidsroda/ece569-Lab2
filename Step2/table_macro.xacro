@@ -8,6 +8,8 @@
     <xacro:property name="table_width" value="1" /> <!-- width (y) of top  -->
     <xacro:property name="table_height" value="1" /> <!-- height (z) of top -->
     <xacro:property name="table_thickness" value=".05" /> <!-- height (z) of top -->
+    <xacro:property name="leg_length" value="${table_height - table_thickness}" /> <!-- height leg -->
+    <xacro:property name="leg_radius" value="0.05" /> <!-- radius of leg -->
 
 
   <!-- joint from "world" to "top"-->
@@ -25,6 +27,78 @@
         <box size="${table_length} ${table_width} ${table_thickness}" />
       </geometry>
       <material name="brown" />
+    </visual>
+  </link>
+
+  <!-- joint from "top" to "Leg1"-->
+  <joint name="${prefix}leg1_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="${leg_length} ${table_height - (2 * table_thickness) / 2)} 0" />
+    <parent link="{prefix}base_link" />
+    <child link="{prefix}leg1" />
+  </joint>
+
+  <!-- Leg1 Link -->
+  <link name="${prefix}leg1">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 ${-(table_height + table_thickness) / 2}" />
+      <geometry>
+        <cylinder radius="${leg_radius}" length="${leg_length}" />
+      </geometry>
+      <material name="light_grey" />
+    </visual>
+  </link>
+
+  <!-- joint from "top" to "Leg2"-->
+  <joint name="${prefix}leg2_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="${-leg_length} ${table_height - (2 * table_thickness) / 2)} 0" />
+    <parent link="{prefix}base_link" />
+    <child link="{prefix}leg2" />
+  </joint>
+
+  <!-- Leg2 Link -->
+  <link name="${prefix}leg_link_2">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 ${-(table_height + table_thickness) / 2}" />
+      <geometry>
+        <cylinder radius="${leg_radius}" length="${leg_length}" />
+      </geometry>
+      <material name="light_grey" />
+    </visual>
+  </link>
+
+  <!-- joint from "top" to "leg3"-->
+  <joint name="${prefix}leg3_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="${leg_length} -${table_height - (2 * table_thickness) / 2)} 0" />
+    <parent link="{prefix}base_link" />
+    <child link="{prefix}leg_link_3" />
+  </joint>
+
+  <!-- Leg3 Link -->
+  <link name="${prefix}leg_link_3">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -${(table_height + table_thickness) / 2}" />
+      <geometry>
+        <cylinder radius="${leg_radius}" length="${leg_length}" />
+      </geometry>
+      <material name="light_grey" />
+    </visual>
+  </link>
+
+  <!-- joint from "top" to "leg4"-->
+  <joint name="${prefix}leg4_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="-${leg_length} -${table_height - (2 * table_thickness) / 2)} 0" />
+    <parent link="{prefix}base_link" />
+    <child link="{prefix}leg_link_4" />
+  </joint>
+
+  <!-- Leg4 Link -->
+  <link name="${prefix}leg_link_4">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -${(table_height + table_thickness) / 2}" />
+      <geometry>
+        <cylinder radius="${leg_radius}" length="${leg_length}" />
+      </geometry>
+      <material name="light_grey" />
     </visual>
   </link>
 

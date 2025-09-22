@@ -11,7 +11,7 @@
   <!-- create the table top -->
   <xacro:table prefix="table_" parent="world">
     <!-- position robot in the world -->
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="0 0 1" rpy="0 0 0" />
   </xacro:table>
   
 

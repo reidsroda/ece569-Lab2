@@ -22,7 +22,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 ${-table_thickness/2}" />
       <geometry>
-        <box size="${table_base} ${table_width} ${table_thickness}" />
+        <box size="${table_length} ${table_width} ${table_thickness}" />
       </geometry>
       <material name="brown" />
     </visual>

@@ -14,7 +14,7 @@
   <joint name="${prefix}base_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 ${table_height}" />
     <parent link="${parent}" />
-    <child link="${prefix}base_link}" />
+    <child link="${prefix}base_link" />
   </joint>
 
   <!-- Top Link -->

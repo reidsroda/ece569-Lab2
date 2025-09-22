@@ -16,7 +16,7 @@
 <joint name="top_joint" type="fixed">
   <origin rpy="0 0 0" xyz="0 0 1" />
   <parent link="world" />
-  <child link="top_link" />
+  <child link="top" />
 </joint>
 
 <!-- Top Link -->

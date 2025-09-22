@@ -12,40 +12,23 @@
   <!-- create link fixed to the "world" -->
   <link name="world" />
 
-  <!-- joint from "world" to leg1"-->
-  <joint name="base_leg1_joint" type="fixed">
-    <origin rpy="0 0 0" xyz=".5 -1 0" />
-    <parent link="world" />
-    <child link="leg1" />
-  </joint>
+  <!-- joint from "world" to "top"-->
+<joint name="top_joint" type="fixed">
+  <origin rpy="0 0 0" xyz="0 0 1" />
+  <parent link="world" />
+  <child link="top_link" />
+</joint>
 
-  <!-- Leg1 Link -->
-  <link name="leg1">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0.475" />
-      <geometry>
-        <cylinder radius="0.05" length="0.95" />
-      </geometry>
-      <material name="brown" />
-    </visual>
-  </link>
+<!-- Top Link -->
+<link name="top">
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 -0.025" />
+    <geometry>
+      <box size="2 1 0.05" />
+    </geometry>
+    <material name="brown" />
+  </visual>
 
-  <!-- joint from "table" to leg1"-->
-  <joint name="table_leg1_joint" type="fixed">
-    <origin rpy="0 0 0" xyz=".5 -1 0" />
-    <parent link="table" />
-    <child link="leg1" />
-  </joint>
-
-  <!-- Table Link -->
-  <link name="table">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 .975" />
-      <geometry>
-        <box size="1 2 0.05" />
-      </geometry>
-      <material name="light_grey" />
-    </visual>
-  </link>
+</link>
   
 </robot>

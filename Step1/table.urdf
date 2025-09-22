@@ -30,7 +30,7 @@
     </visual>
   </link>
 
-  <!-- joint from "world" to "top"-->
+  <!-- joint from "top" to "leg1"-->
   <joint name="leg1_joint" type="fixed">
     <origin rpy="0 0 0" xyz="1 .5 0" />
     <parent link="top" />
@@ -39,6 +39,60 @@
 
   <!-- Leg1 Link -->
   <link name="leg1">
+    <visual>
+      <origin rpy="0 0 0" xyz="-.05 -.05 -.525" />
+      <geometry>
+        <cylinder radius=".05" length=".95" />
+      </geometry>
+      <material name="brown" />
+    </visual>
+  </link>
+
+  <!-- joint from "top" to "leg2"-->
+  <joint name="leg2_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="1 -.5 0" />
+    <parent link="top" />
+    <child link="leg2" />
+  </joint>
+
+  <!-- Leg2 Link -->
+  <link name="leg2">
+    <visual>
+      <origin rpy="0 0 0" xyz="-.05 .05 -.525" />
+      <geometry>
+        <cylinder radius=".05" length=".95" />
+      </geometry>
+      <material name="brown" />
+    </visual>
+  </link>
+
+  <!-- joint from "top" to "leg3"-->
+  <joint name="leg3_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="-1 -.5 0" />
+    <parent link="top" />
+    <child link="leg3" />
+  </joint>
+
+  <!-- Leg3 Link -->
+  <link name="leg3">
+    <visual>
+      <origin rpy="0 0 0" xyz="-.05 .05 -.525" />
+      <geometry>
+        <cylinder radius=".05" length=".95" />
+      </geometry>
+      <material name="brown" />
+    </visual>
+  </link>
+
+    <!-- joint from "top" to "leg4"-->
+  <joint name="leg4_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="1 -.5 0" />
+    <parent link="top" />
+    <child link="leg4" />
+  </joint>
+
+  <!-- Leg4 Link -->
+  <link name="leg4">
     <visual>
       <origin rpy="0 0 0" xyz="-.05 -.05 -.525" />
       <geometry>

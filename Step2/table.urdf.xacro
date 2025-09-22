@@ -15,28 +15,28 @@
   </xacro:table>
 
   <!-- create the first leg -->
-  <xacro:leg prefix="leg1_" parent="world">
+  <!-- <xacro:leg prefix="leg1_" parent="world"> -->
     <!-- position robot in the world -->
     <origin xyz="0 0 0" rpy="0 0 0" />
-  </xacro:leg>
+  <!-- </xacro:leg> -->
 
   <!-- create the second leg -->
-  <xacro:table prefix="leg2_" parent="world">
+  <!-- <xacro:leg prefix="leg2_" parent="world"> -->
     <!-- position robot in the world -->
     <origin xyz="3 0 0" rpy="0 0 ${degrees(180)}" />
-  </xacro:rrbot>
+  <!-- </xacro:leg> -->
 
   <!-- create the third leg -->
-  <xacro:table prefix="leg3_" parent="world">
+  <!-- <xacro:leg prefix="leg3_" parent="world"> -->
     <!-- position robot in the world -->
     <origin xyz="3 0 0" rpy="0 0 ${degrees(180)}" />
-  </xacro:rrbot>
+  <!-- </xacro:leg> -->
 
   <!-- create the fourth leg -->
-  <xacro:table prefix="leg4_" parent="world">
+  <!-- <xacro:leg prefix="leg4_" parent="world"> -->
     <!-- position robot in the world -->
     <origin xyz="3 0 0" rpy="0 0 ${degrees(180)}" />
-  </xacro:rrbot>
+  <!-- </xacro:leg> -->
   
 
 

@@ -32,7 +32,7 @@
 
   <!-- joint from "top" to "Leg1"-->
   <joint name="${prefix}leg1_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="${(leg_length) - leg_radius} ${(table_width / 2) - leg_radius} 0" />
+    <origin rpy="0 0 0" xyz="${(table_length) - leg_radius} ${(table_width / 2) - leg_radius} 0" />
     <parent link="${prefix}base_link" />
     <child link="${prefix}leg1" />
   </joint>
@@ -50,7 +50,7 @@
 
   <!--joint from "top" to "Leg2"-->
   <joint name="${prefix}leg2_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="-${(leg_length) - leg_radius}  ${(table_width / 2) - leg_radius} 0" />
+    <origin rpy="0 0 0" xyz="-${(table_length) - leg_radius}  ${(table_width / 2) - leg_radius} 0" />
     <parent link="${prefix}base_link" />
     <child link="${prefix}leg_link_2" />
   </joint>
@@ -68,7 +68,7 @@
 
   <!-- joint from "top" to "leg3"-->
   <joint name="${prefix}leg3_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="${(leg_length) - leg_radius} -${(table_width / 2) - leg_radius} 0" />
+    <origin rpy="0 0 0" xyz="${(table_length) - leg_radius} -${(table_width / 2) - leg_radius} 0" />
     <parent link="${prefix}base_link" />
     <child link="${prefix}leg_link_3" />
   </joint>
@@ -86,7 +86,7 @@
 
   <!-- joint from "top" to "leg4"-->
   <joint name="${prefix}leg4_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="-${(leg_length) - leg_radius} -${(table_width / 2) - leg_radius} 0" />
+    <origin rpy="0 0 0" xyz="-${(table_length) - leg_radius} -${(table_width / 2) - leg_radius} 0" />
     <parent link="${prefix}base_link" />
     <child link="${prefix}leg_link_4" />
   </joint>

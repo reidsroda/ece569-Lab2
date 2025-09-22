@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="table">
+
+ 
+  <xacro:include filename="materials.xacro" />
+  <xacro:include filename="table_macro.xacro"/>
+
+  <!-- create link fixed to the "world" -->
+  <link name="world" />
+
+  <!-- create the table top -->
+  <xacro:table prefix="table_" parent="world">
+    <!-- position robot in the world -->
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:table>
+
+  <!-- create the first leg -->
+  <xacro:leg prefix="leg1_" parent="world">
+    <!-- position robot in the world -->
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:leg>
+
+  <!-- create the second leg -->
+  <xacro:table prefix="leg2_" parent="world">
+    <!-- position robot in the world -->
+    <origin xyz="3 0 0" rpy="0 0 ${degrees(180)}" />
+  </xacro:rrbot>
+
+  <!-- create the third leg -->
+  <xacro:table prefix="leg3_" parent="world">
+    <!-- position robot in the world -->
+    <origin xyz="3 0 0" rpy="0 0 ${degrees(180)}" />
+  </xacro:rrbot>
+
+  <!-- create the fourth leg -->
+  <xacro:table prefix="leg4_" parent="world">
+    <!-- position robot in the world -->
+    <origin xyz="3 0 0" rpy="0 0 ${degrees(180)}" />
+  </xacro:rrbot>
+  
+
+
+</robot>

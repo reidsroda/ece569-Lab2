@@ -8,7 +8,7 @@
     <link name="world" />
 
     <xacro:table prefix="table1_" parent="world">
-        <origin xyz="5 0 1" rpy="0 0 0" />
+        <origin xyz="5 0 1" rpy="0 0 ${degrees(180)}" />
     </xacro:table>
 
     <xacro:rrbot prefix="rrbot1_" parent="table1_top">

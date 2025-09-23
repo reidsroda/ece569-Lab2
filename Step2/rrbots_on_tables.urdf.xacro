@@ -13,6 +13,6 @@
     </xacro:table>
 
     <xacro:table prefix="table2_" parent="world">
-        <origin xyz="3 0 1" rpy="0 0 ${degrees(180)}" />
+        <origin xyz="-1 6 1" rpy="0 0 ${degrees(180)}" />
     </xacro:table>
 </robot>

@@ -13,14 +13,14 @@
 
 
   <!-- joint from "world" to "top"-->
-  <joint name="{prefix}base_joint" type="fixed">
+  <joint name="${prefix}base_joint" type="fixed">
     <origin rpy="$0 0 0" xyz="0 0 ${table_height}" />
     <parent link="${parent}" />
     <child link="{prefix}top" />
   </joint>
 
   <!-- Top Link -->
-  <link name="{prefix}top">
+  <link name="${prefix}top">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 ${-table_thickness/2}" />
       <geometry>

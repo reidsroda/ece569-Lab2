@@ -11,7 +11,7 @@
         <origin xyz="5 0 1" rpy="0 0 0" />
     </xacro:table>
 
-    <xacro:rrbot prefix="rrbot1_" parent="table_top">
+    <xacro:rrbot prefix="rrbot1_" parent="table1_top">
         <origin xyz="0 0 0" rpy="0 0 0" />
     </xacro:rrbot>
 
@@ -19,7 +19,7 @@
         <origin xyz="-2 0 1" rpy="0 0 0" />
     </xacro:table>
 
-    <xacro:rrbot prefix="rrbot2_" parent="table_top">
+    <xacro:rrbot prefix="rrbot2_" parent="table2_top">
         <origin xyz="0 0 0" rpy="0 0 0" />
     </xacro:rrbot>
 
@@ -27,7 +27,7 @@
         <origin xyz="6 0 1" rpy="0 0 0" />
     </xacro:table>
 
-    <xacro:rrbot prefix="rrbot3_" parent="table_top">
+    <xacro:rrbot prefix="rrbot3_" parent="table3_top">
         <origin xyz="0 0 0" rpy="0 0 0" />
     </xacro:rrbot>
 

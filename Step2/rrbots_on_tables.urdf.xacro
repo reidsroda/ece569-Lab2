@@ -7,28 +7,17 @@
 
     <link name="world" />
 
-    <xacro:table prefix="table1_" parent="world">
-        <origin xyz="0 0 1" rpy="0 0 ${degrees(180)}" />
-    </xacro:table>
 
-    <xacro:rrbot prefix="rrbot1_" parent="table1_top">
-        <origin xyz="0 0 0" rpy="0 0 0" />
-    </xacro:rrbot>
+  <!-- create the first robot -->
+  <xacro:rrbot prefix="rrbot1_" parent="world">
+    <!-- position robot in the world -->
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:rrbot>
 
-    <xacro:table prefix="table2_" parent="world">
-        <origin xyz="5 0 1" rpy="0 0 0" />
-    </xacro:table>
-
-    <xacro:rrbot prefix="rrbot2_" parent="table2_top">
-        <origin xyz="0 0 0" rpy="0 0 0" />
-    </xacro:rrbot>
-
-        <xacro:table prefix="table3_" parent="world">
-        <origin xyz="-2 6 1" rpy="0 0 0" />
-    </xacro:table>
-
-    <xacro:rrbot prefix="rrbot3_" parent="table3_top">
-        <origin xyz="0 0 0" rpy="0 0 0" />
-    </xacro:rrbot>
+  <!-- create the second robot -->
+  <xacro:rrbot prefix="rrbot2_" parent="world">
+    <!-- position robot in the world -->
+    <origin xyz="3 0 0" rpy="0 0 ${degrees(180)}" />
+  </xacro:rrbot>
 
 </robot>

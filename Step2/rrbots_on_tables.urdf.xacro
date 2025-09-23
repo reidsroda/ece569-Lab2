@@ -12,7 +12,28 @@
         <origin xyz="3 0 1" rpy="0 0 ${degrees(180)}" />
     </xacro:table>
 
+    <xacro:rrbot prefix="rrbot1_" parent="world">
+        <!-- position robot in the world -->
+        <origin xyz="3 0 1" rpy="0 0 ${degrees(180)}" />
+    </xacro:rrbot>    
+
     <xacro:table prefix="table2_" parent="world">
-        <origin xyz="-1 6 1" rpy="0 0 ${degrees(180)}" />
+        <origin xyz="-1 6 1" rpy="0 0 0" />
     </xacro:table>
+
+    <xacro:rrbot prefix="rrbot2_" parent="world">
+        <!-- position robot in the world -->
+        <origin xyz="-1 6 1" rpy="0 0 0" />
+    </xacro:rrbot>  
+
+    <xacro:table prefix="table3_" parent="world">
+        <origin xyz="2 -2 1" rpy="0 0 ${degrees(180)}" />
+    </xacro:table>
+
+    <xacro:rrbot prefix="rrbot3_" parent="world">
+        <!-- position robot in the world -->
+        <origin xyz="2 -2 1" rpy="0 0 ${degrees(180)}" />
+    </xacro:rrbot>  
+
+
 </robot>

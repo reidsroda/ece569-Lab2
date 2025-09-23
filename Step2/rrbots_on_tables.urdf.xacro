@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot xmlns:xacro="http://wiki.ros.org/xacro" name="table">
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="rrbot">
 
     <xacro:include filename="materials.xacro" />
     <xacro:include filename="table_macro.xacro" />
@@ -8,7 +8,7 @@
     <link name="world" />
 
     <xacro:table prefix="table1_" parent="world">
-        <origin xyz="5 0 1" rpy="0 0 ${degrees(180)}" />
+        <origin xyz="0 0 1" rpy="0 0 ${degrees(180)}" />
     </xacro:table>
 
     <xacro:rrbot prefix="rrbot1_" parent="table1_top">
@@ -16,7 +16,7 @@
     </xacro:rrbot>
 
     <xacro:table prefix="table2_" parent="world">
-        <origin xyz="-2 0 1" rpy="0 0 0" />
+        <origin xyz="0 0 1" rpy="0 0 0" />
     </xacro:table>
 
     <xacro:rrbot prefix="rrbot2_" parent="table2_top">
@@ -24,7 +24,7 @@
     </xacro:rrbot>
 
         <xacro:table prefix="table3_" parent="world">
-        <origin xyz="6 0 1" rpy="0 0 0" />
+        <origin xyz="0 0 1" rpy="0 0 0" />
     </xacro:table>
 
     <xacro:rrbot prefix="rrbot3_" parent="table3_top">

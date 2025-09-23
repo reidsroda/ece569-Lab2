@@ -14,7 +14,7 @@
 
   <!-- joint from "world" to "top"-->
   <joint name="{prefix}base_joint" type="fixed">
-    <origin rpy="${pi} 0 0" xyz="0 0 ${table_height}" />
+    <origin rpy="${pi} 0 0" xyz="0 0 0" />
     <parent link="${parent}" />
     <child link="{prefix}top" />
   </joint>
@@ -22,7 +22,7 @@
   <!-- Top Link -->
   <link name="{prefix}top">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 ${-table_thickness/2}" />
+      <origin rpy="0 0 0" xyz="0 0 ${table_height-(table_thickness/2)}" />
       <geometry>
         <box size="${table_length} ${table_width} ${table_thickness}" />
       </geometry>
